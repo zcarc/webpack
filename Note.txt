@@ -1,0 +1,13 @@
+module: {
+    rules: [
+      {
+        test: /\.css$/,
+        use: ["style-loader", "css-loader"]
+      },
+    ],
+  }
+
+  로더 순서는 오른쪽에서 왼쪽으로 읽는다.
+  
+  css loader: css -> js 파싱
+  style loader: header tag에 style tag를 삽입
